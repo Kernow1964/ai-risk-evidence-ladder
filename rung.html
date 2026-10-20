@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evidence Record · AI Risk Evidence Ladder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="record-header"><nav><b><a href="index.html">AI Risk Evidence Ladder</a></b><a href="index.html#ladder">Ladder</a><a href="index.html#governance">Governance</a><a href="index.html#method">Method</a></nav></header>
+<main class="record-shell">
+<a class="back-link" href="index.html#rung-1">← Back to ladder</a>
+<div id="record" class="record-card"><p>Loading evidence record…</p></div>
+</main>
+<footer>Evidence first. Conclusions provisional.</footer>
+<script>
+const params=new URLSearchParams(location.search);const n=params.get('rung')||'1';
+const esc=s=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+fetch(`evidence/rung-${String(n).padStart(2,'0')}.json`).then(r=>{if(!r.ok)throw new Error();return r.json()}).then(d=>{
+document.title=`Rung ${d.rung}: ${d.title} · AI Risk Evidence Ladder`;
+const evidence=d.supportingEvidence.map(x=>`<article class="evidence-item"><h3>${esc(x.name)}${x.date?` <small>${esc(x.date)}</small>`:''}</h3><p>${esc(x.summary)}</p><a href="${esc(x.url)}" target="_blank" rel="noopener">Primary source ↗</a></article>`).join('');
+const extra=(d.additionalSources||[]).map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a></li>`).join('');
+const history=(d.history||[]).map(x=>`<li><b>${esc(x.date)}</b> — ${esc(x.note)}</li>`).join('');
+document.getElementById('record').innerHTML=`<div class="record-kicker">RUNG ${esc(d.rung)} · EVIDENCE RECORD</div><div class="record-title"><div><h1>${esc(d.title)}</h1><p class="status established">${esc(d.classification)} · ${esc(d.confidence)} confidence</p></div></div><section><h2>Claim</h2><p class="lead">${esc(d.claim)}</p></section><section><h2>Supporting evidence</h2>${evidence}</section><section><h2>Counter-evidence & limitations</h2><p>${esc(d.limitations)}</p></section><section><h2>Assessment rationale</h2><p>${esc(d.assessment)}</p></section><section><h2>What would change the classification?</h2><p>${esc(d.changeTest)}</p></section>${extra?`<section><h2>Additional primary sources</h2><ul>${extra}</ul></section>`:''}<section><h2>Change history</h2><ul class="history">${history}</ul></section><nav class="record-nav"><a href="index.html#rung-${d.rung}">← Ladder</a>${d.rung<11?`<a href="rung.html?rung=${d.rung+1}">Next rung →</a>`:''}</nav>`;
+}).catch(()=>{document.getElementById('record').innerHTML='<h1>Evidence record not yet published</h1><p>This rung has not yet received its full evidence review.</p><p><a href="index.html">Return to the ladder</a></p>'});
+</script>
+</body></html>
