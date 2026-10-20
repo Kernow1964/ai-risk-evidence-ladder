@@ -1,0 +1,21 @@
+{
+  "rung": 1,
+  "title": "AI materially assists AI R&D",
+  "classification": "Established",
+  "confidence": "High",
+  "claim": "Frontier AI systems can perform materially useful portions of the research and engineering work involved in developing AI systems, under human direction or supervision.",
+  "supportingEvidence": [
+    {"name":"Anthropic","date":"Aug. 2026","summary":"Its internal R&D Automation Index reports Claude at collaborates level or above for more than 90% of measured AI R&D work and leads 26%. Anthropic reports no measured subset as fully autonomous.","url":"https://www.anthropic.com/institute/measuring-pace-of-ai-development"},
+    {"name":"OpenAI","date":"Aug. 2026","summary":"Its research organization reports using 3.1 agent-workdays for every human workday, with coding agents increasingly integrated into research workflows.","url":"https://openai.com/index/research-acceleration-view-inside-openai/"},
+    {"name":"METR RE-Bench","summary":"Independent evaluations show frontier agents can perform challenging ML research-engineering tasks, while substantial gaps relative to expert humans remain at longer time horizons.","url":"https://metr.org/blog/2024-11-22-evaluating-r-d-capabilities-of-llms/"},
+    {"name":"Google DeepMind AlphaEvolve","summary":"AI-generated algorithms have been used in Google infrastructure and AI training processes, including training models underlying AlphaEvolve itself.","url":"https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"}
+  ],
+  "limitations": "Material assistance is not universal productivity acceleration. METR's randomized 2025 study of experienced open-source developers found developers took 19% longer when allowed to use then-current AI tools. METR's later study produced raw evidence pointing toward speedup, but selection effects prevented a reliable estimate. Frontier-lab measurements are also partly self-reported and should not be treated as equivalent to independent replication.",
+  "assessment": "Established — high confidence. Convergent evidence from frontier-lab deployment, independent evaluation and concrete algorithmic contributions establishes that AI can materially assist portions of AI R&D. This does not establish autonomous end-to-end AI research, universal productivity gains, sustained recursive self-improvement or an intelligence explosion.",
+  "changeTest": "A downgrade to Emerging would require substantial independent evidence that apparent AI R&D contributions are systematically offset by verification, correction or integration costs, together with evidence that internal lab measurements materially overstate useful contribution. Evidence of autonomous end-to-end development of materially improved successor systems would bear directly on higher rungs.",
+  "additionalSources": [
+    {"name":"METR — Experienced open-source developer productivity study","url":"https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"},
+    {"name":"METR — 2026 productivity-study update","url":"https://metr.org/blog/2026-02-24-uplift-update/"}
+  ],
+  "history": [{"date":"20 Oct. 2026","note":"Initial evidence record published. Classification: Established · High confidence."}]
+}
