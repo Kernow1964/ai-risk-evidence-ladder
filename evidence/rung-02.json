@@ -1,0 +1,56 @@
+{
+  "rung": 2,
+  "title": "Research agents recursively improve parts of themselves",
+  "classification": "Established",
+  "confidence": "High",
+  "claim": "AI agents can iteratively modify components of their own agent software or research harness, evaluate the resulting variants, and use successful variants as the starting point for further improvement.",
+  "supportingEvidence": [
+    {
+      "name": "AIDE² — Recursive self-improvement of AI research agents",
+      "date": "Sep. 2026",
+      "summary": "AIDE² repeatedly rewrote the code of an AI research agent, benchmarked each variant and used accepted variants for subsequent rounds. In an autonomous eight-day run it found seven successive improvements that transferred to held-out AI R&D tasks and domains.",
+      "url": "https://arxiv.org/abs/2609.26457"
+    },
+    {
+      "name": "Darwin Gödel Machine",
+      "date": "May 2025",
+      "summary": "The DGM autonomously modified its own coding-agent code and evaluated descendants. Reported SWE-bench performance rose from 20.0% to 50.0%, and Polyglot from 14.2% to 30.7%; ablations without self-improvement performed worse.",
+      "url": "https://arxiv.org/abs/2505.22954"
+    },
+    {
+      "name": "A Self-Improving Coding Agent",
+      "date": "Apr. 2025",
+      "summary": "A coding agent equipped with basic coding tools autonomously edited its own agent implementation and improved benchmark performance from 17% to 53% on a sampled subset of SWE-bench Verified, with gains also reported on other coding benchmarks.",
+      "url": "https://arxiv.org/abs/2504.15228"
+    },
+    {
+      "name": "Google DeepMind AlphaEvolve",
+      "date": "May 2025",
+      "summary": "AlphaEvolve evolves executable algorithms using model-generated proposals and automated evaluators. DeepMind reports that its discoveries improved AI training processes used for the models underlying AlphaEvolve itself. This is indirect rather than full self-modification, but demonstrates an AI-development feedback path.",
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
+    }
+  ],
+  "limitations": "The demonstrated recursion is bounded. These systems mainly improve agent scaffolding, search policies, prompts, memory, tools or other code around a fixed foundation model; they do not autonomously redesign and retrain their own underlying model weights end to end. Improvements depend heavily on externally supplied benchmarks, evaluators, compute and sandbox infrastructure. Recent literature also finds self-improvement can plateau, regress or optimize the wrong target when evaluation is weak. Anthropic explicitly states that fully autonomous design and development of an AI system's own successor has not yet been achieved.",
+  "assessment": "Established — high confidence, with deliberately narrow wording. Multiple independent research systems now demonstrate genuine iterative self-modification: an agent changes components of its own operating system or research harness, evaluates the descendant, and successful descendants participate in later improvement rounds. That satisfies this rung. It does not establish open-ended recursive self-improvement of the entire model, sustained acceleration, autonomous successor development or an intelligence explosion; those are separate higher rungs.",
+  "changeTest": "A downgrade would require credible replication failures showing that apparent gains primarily reflect benchmark overfitting, evaluator leakage or hidden human engineering rather than transferable self-modification. Evidence that agents can autonomously redesign, train, validate and deploy materially superior successor foundation models would strengthen this rung but, more importantly, move evidence toward the higher claims concerning sustained recursive improvement and AI R&D acceleration.",
+  "additionalSources": [
+    {
+      "name": "Anthropic — When AI builds itself",
+      "url": "https://www.anthropic.com/institute/recursive-self-improvement"
+    },
+    {
+      "name": "Survey — Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
+      "url": "https://arxiv.org/abs/2607.07663"
+    },
+    {
+      "name": "SpecForge — recursive self-improvement via behavioral specifications",
+      "url": "https://arxiv.org/abs/2610.15708"
+    }
+  ],
+  "history": [
+    {
+      "date": "20 Oct. 2026",
+      "note": "Initial evidence record published. Classification retained as Established · High confidence. Claim wording narrowed to bounded recursive modification of agent components, explicitly excluding autonomous end-to-end successor-model development."
+    }
+  ]
+}
