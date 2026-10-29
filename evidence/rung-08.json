@@ -1,0 +1,58 @@
+{
+  "rung": 8,
+  "title": "Recursive self-improvement produces an intelligence explosion",
+  "classification": "Speculative",
+  "confidence": "Moderate",
+  "claim": "Recursive AI improvement could become sufficiently strong and rapid that successive capability gains substantially accelerate further gains, producing a period of exceptionally fast growth in AI capability — an intelligence explosion.",
+  "supportingEvidence": [
+    {
+      "name": "Anthropic — When AI builds itself",
+      "date": "Sep. 2026",
+      "summary": "Anthropic reports rapidly increasing AI contribution to its own AI-development process and argues that, taken far enough and given sufficient compute, the trend could lead to systems capable of autonomously developing successors. Anthropic explicitly states that this point has not yet been reached and is not inevitable.",
+      "url": "https://www.anthropic.com/institute/recursive-self-improvement"
+    },
+    {
+      "name": "Chan et al. — What if automating AI R&D triggers an intelligence explosion?",
+      "date": "Sep. 2026",
+      "summary": "A multi-author analysis concludes that growing automation of AI R&D creates a plausible pathway to much faster capability growth, while emphasizing substantial uncertainty over whether the feedback is strong enough to produce an intelligence explosion.",
+      "url": "https://arxiv.org/abs/2609.36054"
+    },
+    {
+      "name": "AIDE² — Recursive self-improvement of AI research agents",
+      "date": "Sep. 2026",
+      "summary": "An autonomous research agent produced seven successive accepted improvements to its own agent software during an eight-day run, with gains transferring to held-out tasks. This demonstrates bounded recursive improvement, but not explosive or indefinitely accelerating capability growth.",
+      "url": "https://arxiv.org/abs/2609.26457"
+    },
+    {
+      "name": "Cunningham et al. — The Economics of Recursive Self-Improvement",
+      "date": "Sep. 2026",
+      "summary": "Economic modeling identifies the conditions under which AI-R&D feedback loops could generate self-sustaining acceleration. Calibration to available evidence suggests those feedback loops are strengthening but are not currently strong enough to produce self-sustaining acceleration.",
+      "url": "https://arxiv.org/abs/2609.15802"
+    },
+    {
+      "name": "Toby Ord — The Dynamics of Intelligence Explosions",
+      "date": "Aug. 2026",
+      "summary": "Mathematical analysis shows that recursive improvement can in principle generate very rapid growth, but explosive dynamics depend sensitively on feedback strength and generation time. Singular growth is harder to obtain than some simplified models imply.",
+      "url": "https://www.forethought.org/research/the-dynamics-of-intelligence-explosions"
+    }
+  ],
+  "limitations": "No observed AI system has undergone an intelligence explosion, and current evidence does not demonstrate even the sustained accelerating feedback loop required by Rung 6. Existing recursive-improvement demonstrations are bounded, typically modify agent scaffolding rather than autonomously redesigning and training increasingly capable foundation models, and remain dependent on external compute, evaluations, infrastructure and human decisions. Diminishing returns, experiment and training times, hardware constraints, verification costs and weak strategic research judgment could substantially limit compounding. Mathematical and economic analyses establish conditional plausibility, not empirical occurrence.",
+  "assessment": "Speculative — moderate confidence. The mechanism is no longer purely hypothetical: AI materially contributes to AI R&D, bounded recursive self-improvement has been demonstrated, and credible models show conditions under which feedback could generate very rapid capability growth. But the central proposition — that recursive improvement actually produces an intelligence explosion — remains unobserved. Current empirical evidence instead shows bounded gains and feedback loops that are not yet strong enough to sustain acceleration. The evidence therefore justifies treating an intelligence explosion as a serious possibility, not as an established or emerging empirical phenomenon.",
+  "changeTest": "Upgrade to Emerging if real-world AI-development loops demonstrate sustained acceleration over multiple generations: improvements to AI research capability measurably shorten or amplify subsequent development cycles, with compounding gains that persist rather than plateau and are large enough to dominate major external bottlenecks. Upgrade to Established would require direct observation of exceptionally rapid, self-reinforcing capability growth attributable to recursive AI improvement. Evidence that recursive gains consistently saturate, or that compute, experimentation, verification and physical bottlenecks prevent meaningful compounding even as AI R&D automation rises, would weaken the proposition.",
+  "additionalSources": [
+    {
+      "name": "IBM — Why recursive self-improvement suddenly became a serious question",
+      "url": "https://www.ibm.com/think/news/why-recursive-self-improvement-ai-serious-question"
+    },
+    {
+      "name": "IEEE Spectrum — AI Is Starting to Build Better AI",
+      "url": "https://spectrum.ieee.org/recursive-self-improvement"
+    }
+  ],
+  "history": [
+    {
+      "date": "29 Oct. 2026",
+      "note": "Initial evidence record published. Classification: Speculative · Moderate confidence. Empirical precursors are strengthening, but no intelligence explosion or sustained accelerating recursive loop has been demonstrated."
+    }
+  ]
+}
