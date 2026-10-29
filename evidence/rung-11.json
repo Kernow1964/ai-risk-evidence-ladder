@@ -1,0 +1,52 @@
+{
+  "rung": 11,
+  "title": "Loss of control causes human extinction",
+  "classification": "Speculative",
+  "confidence": "High",
+  "claim": "A sufficiently severe and durable loss of human control over advanced AI could lead to the extinction of humanity, rather than to a serious but survivable catastrophe, displacement of human authority, or eventual recovery of control.",
+  "supportingEvidence": [
+    {
+      "name": "International AI Safety Report 2026",
+      "date": "Feb. 2026",
+      "summary": "The international expert assessment identifies human extinction as one hypothesised extreme consequence of severe loss of control, while emphasizing that expert views vary greatly and that current systems do not have the capabilities needed to cause loss of control.",
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "name": "International AI Safety Report 2025",
+      "date": "2025",
+      "summary": "The report notes that sufficiently severe loss of control has been argued to permit human marginalisation or extinction, but also stresses that loss of control need not be catastrophic and that pathways from loss of control to catastrophic outcomes have been described only in broad strokes.",
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "name": "RAND — Global Catastrophic Risk Assessment",
+      "date": "2024",
+      "summary": "RAND concludes that even if a future supercapable AI escaped human control, the route from that event to global catastrophe remains unclear; it characterizes such scenarios as lacking compelling near-term empirical evidence.",
+      "url": "https://www.rand.org/pubs/research_reports/RRA2981-1.html"
+    },
+    {
+      "name": "Empirical evidence for loss of control review",
+      "date": "May 2026",
+      "summary": "A systematic review of 19 empirical studies finds evidence for some precursor properties relevant to loss of control, but substantial validity and generalisation gaps remain. This evidence bears on the prerequisite loss-of-control step rather than demonstrating extinction consequences.",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6786058"
+    }
+  ],
+  "limitations": "There is no empirical observation of AI-caused permanent loss of human control, much less extinction resulting from it. Extinction scenarios therefore require extrapolation across multiple uncertain links: much more capable systems, persistent misalignment, successful circumvention of countermeasures, durable control of consequential resources, inability of humans or other systems to recover control, and a mechanism by which that situation eliminates every viable human population. Loss of control could instead produce outcomes ranging from limited disruption to severe catastrophe, political or economic displacement, or eventual recovery. Expert concern and high consequence justify attention, but they do not constitute empirical evidence that extinction would follow.",
+  "assessment": "Speculative — high confidence in the classification. Human extinction is a logically possible hypothesised consequence of extreme AI loss of control and is taken seriously by some leading researchers, but the proposition currently rests overwhelmingly on theoretical threat models and extrapolation. Even Rung 10 — permanent loss of control — has not been demonstrated, and the additional causal step from permanent loss of control to extinction has little direct empirical support. The severity of the outcome warrants risk analysis; the evidence does not warrant describing the proposition as Emerging or Established.",
+  "changeTest": "Upgrade to Emerging if evidence substantially strengthens both prerequisite and consequence: advanced systems demonstrate durable loss of control or robust capabilities close to it, and credible empirical or strongly validated modelling shows that plausible loss-of-control scenarios systematically create mechanisms capable of defeating human recovery and threatening essentially all human populations. Downgrade in concern, while retaining a Speculative evidence label, if mature highly capable autonomous systems remain controllable in adversarial real-world deployments or if validated analyses show strong structural barriers between loss of control and extinction.",
+  "additionalSources": [
+    {
+      "name": "UN Independent International Scientific Panel on AI — 2026 preliminary report",
+      "url": "https://www.un.org/independent-international-scientific-panel-ai/en/preliminary-report"
+    },
+    {
+      "name": "UN Panel — AI agents, misalignment and risk of losing human control",
+      "url": "https://www.un.org/independent-international-scientific-panel-ai/en/thematic-briefs/ai-agents-misalignment-risks"
+    }
+  ],
+  "history": [
+    {
+      "date": "29 Oct. 2026",
+      "note": "Initial full evidence record published. Classification: Speculative · High confidence."
+    }
+  ]
+}
