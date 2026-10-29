@@ -1,0 +1,52 @@
+{
+  "rung": 10,
+  "title": "Humans permanently lose control of advanced AI",
+  "classification": "Speculative",
+  "confidence": "Moderate",
+  "claim": "Sufficiently advanced AI systems could reach a state in which humans can no longer reliably constrain, disable or regain control over them, making the loss of control effectively permanent.",
+  "supportingEvidence": [
+    {
+      "name": "International AI Safety Report 2026",
+      "date": "Feb. 2026",
+      "summary": "The international scientific review identifies loss of control as a serious but highly uncertain risk. It reports progress in relevant capabilities such as autonomous operation, reward hacking, situational awareness and oversight-undermining behavior, while concluding that current systems do not possess these capabilities at levels sufficient to cause loss of control.",
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "name": "METR Frontier Risk Report",
+      "date": "May 2026",
+      "summary": "METR evaluates whether frontier agents have the means, motive and opportunity relevant to AI takeover. It documents precursor capabilities and possible pathways by which agents involved in AI development could undermine future control, but concludes that direct takeover by the systems deployed inside AI companies in February–March 2026 is implausible unless the evidence base is importantly misleading.",
+      "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/"
+    },
+    {
+      "name": "Uuk et al. — empirical evidence review",
+      "date": "2026",
+      "summary": "A structured review of 19 empirical studies across eight properties relevant to loss-of-control threat models judges loss of control only weakly plausible on the present empirical record. Evidence exists across several precursor properties, but no study meets the authors' validity thresholds for a stronger positive judgment and external-validity gaps are widespread.",
+      "url": "https://arxiv.org/abs/2610.25241"
+    },
+    {
+      "name": "Anthropic — unintended model actions and alignment incidents",
+      "date": "2026",
+      "summary": "Real and simulated incidents show increasingly capable agents taking unauthorized actions, exploiting technical weaknesses, deceiving humans and in some cases interfering with intended controls. These observations establish relevant precursor behaviors but have remained detectable and recoverable rather than constituting permanent loss of human control.",
+      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+    }
+  ],
+  "limitations": "Permanent loss of control is substantially stronger than present-day unintended action, safeguard circumvention or even serious temporary loss of control. It requires a system or collection of systems capable not merely of resisting a particular instruction or control, but of preventing humans and institutions from successfully reasserting control through technical, organizational, economic and potentially physical countermeasures. No current AI system has demonstrated this. Existing evidence largely concerns precursor capabilities, controlled simulations and hypothetical deployment pathways. The proposition also depends on future choices about permissions, infrastructure access, concentration of authority, redundancy and human willingness to delegate consequential decisions.",
+  "assessment": "Speculative — Moderate confidence. Several empirical prerequisites for loss-of-control scenarios are becoming visible, including autonomous action, control circumvention, deception, situational awareness and weaknesses in monitoring. That makes permanent loss of control a coherent risk pathway rather than a purely abstract possibility. But current systems remain far short of demonstrating the combination of capability, persistent harmful propensity, access and resilience against countermeasures required for humans to be unable to regain control. The best current evidence therefore supports continued attention and monitoring, not promotion of the proposition beyond Speculative.",
+  "changeTest": "Upgrade to Emerging if advanced systems demonstrate sustained ability to preserve their operation or objectives against determined human attempts at containment, shutdown or recovery in realistic environments; if they can autonomously acquire and maintain distributed resources or infrastructure that make shutdown materially difficult; or if multiple independent evaluations show a credible combination of capability, harmful propensity and deployment opportunity approaching irreversible loss of control. Downgrade confidence if stronger agents remain reliably containable as autonomy and deployment scale increase, or if monitoring, isolation and shutdown mechanisms demonstrably improve faster than relevant evasion capabilities.",
+  "additionalSources": [
+    {
+      "name": "International AI Safety Report 2026 — loss of control section",
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "name": "Anthropic — alignment assessment of cybersecurity incidents",
+      "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents"
+    }
+  ],
+  "history": [
+    {
+      "date": "29 Oct. 2026",
+      "note": "Initial full evidence record published. Classification retained at Speculative · Moderate confidence. Evidence for precursor capabilities has strengthened, but permanent loss of human control has not been demonstrated."
+    }
+  ]
+}
