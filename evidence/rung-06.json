@@ -1,0 +1,52 @@
+{
+  "rung": 6,
+  "title": "Recursive improvement becomes a sustained accelerating feedback loop",
+  "classification": "Emerging",
+  "confidence": "Moderate",
+  "claim": "Improvements produced with substantial AI assistance can feed into later AI-development cycles in ways that make subsequent improvement faster or more effective, creating a positive feedback loop that could become sustained and accelerating.",
+  "supportingEvidence": [
+    {
+      "name": "AIDE²",
+      "date": "Sep. 2026",
+      "summary": "An autonomous eight-day run produced seven successive accepted improvements to an AI research agent. Each accepted rewrite became the agent edited in later rounds, demonstrating a bounded multi-generation feedback loop with transferable gains. The study does not establish that the rate of improvement itself accelerated.",
+      "url": "https://arxiv.org/abs/2609.26457"
+    },
+    {
+      "name": "OpenAI — Research acceleration",
+      "date": "Sep. 2026",
+      "summary": "OpenAI reports rapidly increasing use of coding agents in AI research, 3.1 agent-workdays per human workday by mid-August, more experiments, and delegation of longer-horizon tasks. This supports strengthening AI-to-AI-development feedback, while OpenAI explicitly notes that bottlenecks mean overall research progress need not rise at the same rate as these component metrics.",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai/"
+    },
+    {
+      "name": "Anthropic — When AI builds itself",
+      "date": "Sep. 2026",
+      "summary": "Anthropic reports delegating a growing share of AI development to AI systems and says this is speeding up its work. It describes fully autonomous successor development as a possible continuation of the trend, while explicitly stating that this has not yet been achieved and is not inevitable.",
+      "url": "https://www.anthropic.com/institute/recursive-self-improvement"
+    },
+    {
+      "name": "Economics of Recursive Self-Improvement",
+      "date": "Sep. 2026",
+      "summary": "A quantitative framework models the feedback loops required for recursive acceleration. Its calibration concludes that current feedback loops appear to be strengthening but are not yet strong enough to generate self-sustaining acceleration.",
+      "url": "https://arxiv.org/abs/2609.15802"
+    }
+  ],
+  "limitations": "The central proposition is stronger than merely showing repeated self-improvement. AIDE² demonstrates successive retained improvements, but not that each generation improves the next generation faster than the previous one; evidence on whether the improved agents became better at producing further improvements is inconclusive. Frontier-lab productivity data show increasing AI contribution to R&D, but they do not isolate a self-sustaining recursive effect from better base models, more compute, greater agent usage, human engineering, or ordinary organizational learning. Research-direction setting, evaluation quality, compute, data, experimental throughput and human steering remain potential bottlenecks. Current economic calibration specifically finds the feedback below the threshold for self-sustaining acceleration.",
+  "assessment": "Emerging — moderate confidence. Several pieces needed for a positive feedback loop are now empirically visible: AI materially contributes to AI R&D, bounded agents can retain successive self-improvements, and frontier labs report increasing AI-driven research throughput. There is therefore more than a purely theoretical case for feedback. But the defining feature of this rung — sustained acceleration in which AI-enabled improvements systematically make subsequent improvement faster or more effective — has not been demonstrated. The evidence currently establishes strengthening precursors and bounded loops, not a self-sustaining accelerating regime.",
+  "changeTest": "Upgrade toward Established if independent or well-audited evidence shows multiple development generations in which AI-produced improvements measurably increase the rate or efficiency of producing the next generation, under comparable resource accounting and with gains transferring beyond the optimization benchmark. Downgrade toward Speculative if longer multi-round studies repeatedly show diminishing returns, stalled improvement, dependence on increasing human intervention or compute, or failure of gains to transfer. Evidence should distinguish recursive acceleration from ordinary increases in compute, model scale, tooling and human effort.",
+  "additionalSources": [
+    {
+      "name": "Recursive Self-Improvement in AI — survey of bounded versus open-ended loops",
+      "url": "https://arxiv.org/abs/2607.07663"
+    },
+    {
+      "name": "Recursive Self-Improvement in AI — September 2026 survey",
+      "url": "https://doi.org/10.20944/preprints202609.2680.v1"
+    }
+  ],
+  "history": [
+    {
+      "date": "29 Oct. 2026",
+      "note": "Initial full evidence review published. Classification retained at Emerging; confidence Moderate. Evidence supports strengthening precursors and bounded recursive loops, but not yet sustained accelerating feedback."
+    }
+  ]
+}
