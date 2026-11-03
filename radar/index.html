@@ -7,66 +7,92 @@
 <title>AI Decision Radar — Stage 1</title>
 <link rel="stylesheet" href="../styles.css">
 <style>
-.radar-note{background:#fffaf0;border-top:6px solid #b8862d;padding:28px 34px;margin:0 0 42px;box-shadow:0 2px 8px #082b350d}
+.radar-note{background:#fffaf0;border-top:6px solid #b8862d;padding:28px 34px;margin:0 0 34px;box-shadow:0 2px 8px #082b350d}
+.client-card{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;background:#fffaf0;padding:30px 34px;margin:0 0 46px;border-left:7px solid #b8862d;box-shadow:0 2px 8px #082b3510}
+.client-card small,.section-kicker{letter-spacing:.14em;font-weight:800;color:#b8862d}.client-card h2{margin:.25em 0}.client-card ul{margin:0;padding-left:20px}.client-card li{margin:6px 0}
 .signal-head{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start}
 .signal-score{background:#082b35;color:#fffaf0;padding:14px 18px;min-width:150px;text-align:right;border-bottom:4px solid #b8862d}
 .signal-score strong{display:block;font:2.5rem Georgia;line-height:1}.signal-score span{font-size:.78rem;color:#d6b15c}
-.four{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
-.four div,.score7 div{background:#f0ebdf;padding:12px}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.four div,.score7 div{background:#f0ebdf;padding:12px}
 .four small,.score7 small{display:block;color:#657176}.score7{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
 .call{padding:16px 18px;border-left:4px solid #b8862d;background:#f5ead0;margin:16px 0}.good{border-left-color:#236343;background:#e8efe7}
 .method4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.method4 div{background:#f0ebdf;padding:16px}.method4 b{display:block;font:1.8rem Georgia;color:#b8862d}.method4 strong{display:block;color:#082b35}
-@media(max-width:700px){.signal-head,.four,.score7,.method4{grid-template-columns:1fr 1fr}.signal-score{text-align:left}}
-@media(max-width:460px){.signal-head,.four,.score7,.method4{grid-template-columns:1fr}}
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}.filter-row button{border:1px solid #b8862d55;background:#fffaf0;padding:8px 12px;border-radius:99px;font:inherit;font-weight:700;color:#082b35;cursor:pointer}.filter-row button.active{background:#082b35;color:#fffaf0;border-color:#082b35}
+.response-evaluate{color:#9a6910}.response-monitor{color:#35647a}
+@media(max-width:700px){.signal-head,.four,.score7,.method4,.client-card{grid-template-columns:1fr 1fr}.signal-score{text-align:left}}
+@media(max-width:460px){.signal-head,.four,.score7,.method4,.client-card{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
-<nav><b>AI Decision Radar</b><a href="#assessments">Assessments</a><a href="#method">Method</a><a href="#test">Test</a></nav>
+<nav><b>AI Decision Radar</b><a href="#assessments">Assessments</a><a href="#client">Client</a><a href="#method">Method</a><a href="#test">Test</a></nav>
 <section class="hero">
 <small>STAGE 1 · HUMAN-REVIEWED PROTOTYPE · NOVEMBER 2026</small>
 <h1>What changed? Does it matter? What should we do?</h1>
 <p>AI Decision Radar turns noisy AI developments into short, evidence-disciplined assessments — separating what happened from what is claimed, and significance from client-specific action.</p>
-<blockquote>Less AI news. More decision intelligence.</blockquote>
+<blockquote>Signal → Interpretation → Relevance → Decision</blockquote>
 <p class="legend"><i>Evidence first</i><i>Two-pass analysis</i><i>Human reviewed</i></p>
 </section>
 </header>
 
 <main>
 <section class="radar-note">
-<small>WHAT THIS VERSION IS FOR</small>
-<h2>Test the analysis before we automate the experience.</h2>
+<small class="section-kicker">WHAT THIS VERSION IS FOR</small>
+<h2>Test the intelligence product before we automate the experience.</h2>
 <p>This first version is deliberately small. It shows reviewed Radar assessments to a limited test audience and asks one question: <b>is this kind of analysis useful enough that you would want more of it?</b></p>
-<p><b>Stage 1:</b> no autonomous publishing, no invented client context, and no self-service AI analysis yet.</p>
+<p><b>Stage 1:</b> curated developments, one stable client profile, two-pass analysis, human review. No autonomous publishing, accounts, billing, dashboard sprawl or self-service AI analysis yet.</p>
 </section>
 
 <section class="dashboard">
-<div class="metric emerging"><strong>2</strong><span>Worked assessments</span></div>
+<div class="metric emerging"><strong>3</strong><span>Reviewed signals</span></div>
 <div class="metric established"><strong>2</strong><span>Analytical passes</span></div>
 <div class="metric speculative"><strong>7</strong><span>Significance dimensions</span></div>
 <div class="metric updated"><span>Last reviewed</span><strong>3 Nov 2026</strong></div>
 </section>
 
-<section id="assessments">
-<h2>Worked assessments</h2>
-<p>Two different signals: one product/capability development and one organizational adoption development.</p>
+<section class="client-card" id="client">
+<div>
+<small>PASS 2 CONTEXT · SYNTHETIC TEST PROFILE</small>
+<h2>Representative 200-lawyer U.S. regional law firm</h2>
+<p>This is a deliberately simple synthetic profile, not a real client. Stage 1 holds it stable so reviewers can see whether development-level evidence turns into sensible client-specific decisions.</p>
+</div>
+<ul>
+<li>Approximately 200 lawyers across a regional U.S. footprint.</li>
+<li>Uses Microsoft 365, iManage and Westlaw as core knowledge/work systems.</li>
+<li>No firmwide agentic-AI deployment; experimentation is decentralized.</li>
+<li>Small innovation/knowledge team with limited capacity for continuous AI monitoring.</li>
+<li>Priorities: useful adoption, confidentiality, professional responsibility and avoiding unnecessary tool proliferation.</li>
+<li>Management wants concise horizon scanning: what changed, why it matters, what to do and what can be ignored.</li>
+</ul>
+</section>
 
-<details class="rung emerging" open>
-<summary><span>1</span><strong>Thomson Reuters — next-generation CoCounsel Legal</strong><em>22/35 · MONITOR</em></summary>
+<section id="assessments">
+<small class="section-kicker">REVIEWED SIGNALS</small>
+<h2>Current Radar</h2>
+<p>Three different signals: a product/capability development, a packaged horizon-scanning workflow, and an organizational adoption signal.</p>
+
+<div class="filter-row" aria-label="Filter assessments">
+<button class="active" data-filter="all" type="button">All 3</button>
+<button data-filter="evaluate" type="button">Evaluate · 2</button>
+<button data-filter="monitor" type="button">Monitor · 1</button>
+</div>
+
+<details class="rung emerging radar-signal evaluate" open>
+<summary><span>1</span><strong>Thomson Reuters — next-generation CoCounsel Legal</strong><em>22/35 · EVALUATE</em></summary>
 <div>
 <div class="signal-head">
 <div>
 <h3>Radar readout</h3>
-<p class="lead">A meaningful shift toward integrated, multi-step legal AI workflows is generally available in the U.S., with at least one reported major-firm deployment. It is worth attention, but the evidence does not yet establish productivity, economic impact or broad adoption of the new capabilities.</p>
+<p class="lead">A meaningful shift toward integrated, multi-step legal AI workflows is generally available in the U.S., with at least one reported major-firm deployment. The development is worth attention, but the evidence does not yet establish productivity, economic impact or broad adoption of the new capabilities.</p>
 </div>
 <div class="signal-score"><span>SIGNIFICANCE</span><strong>22/35</strong><span>Worth attention</span></div>
 </div>
 
 <div class="four">
-<div><small>Response</small><b>MONITOR</b></div>
-<div><small>Client relevance</small><b>Not assessed</b></div>
+<div><small>Response</small><b class="response-evaluate">EVALUATE</b></div>
+<div><small>Client relevance</small><b>5/5</b></div>
 <div><small>Evidence confidence</small><b>Medium–High</b></div>
-<div><small>Transferability</small><b>Uncertain</b></div>
+<div><small>Transferability</small><b>Moderate / uncertain</b></div>
 </div>
 
 <h3>What changed</h3>
@@ -74,10 +100,10 @@
 <p>On August 26, Thomson Reuters announced that Greenberg Traurig had deployed the new CoCounsel Legal across its global offices following beta participation and product collaboration.</p>
 
 <h3>Why it matters</h3>
-<p>The signal is not simply “better AI.” It is the continued movement from isolated prompting toward integrated legal workflows combining research, drafting, verification, matter context and firm knowledge. That may eventually affect how legal organizations structure work and evaluate their technology stack.</p>
+<p>The signal is not simply “better AI.” It is the continued movement from isolated prompting toward integrated legal workflows combining research, drafting, verification, matter context and firm knowledge. For the test client, existing Westlaw use makes this directly relevant to current research and drafting workflows.</p>
 
 <div class="call"><b>What the evidence does not establish</b><br>No controlled evidence here establishes improved lawyer productivity, lower matter cost, staffing changes, better legal outcomes or broad adoption of the newly released agentic capabilities.</div>
-<div class="call good"><b>What you can ignore</b><br>Do not treat this launch as proof of autonomous legal work, demonstrated ROI or an immediate change in law-firm economics.</div>
+<div class="call good"><b>What you can ignore</b><br>Do not treat this launch, vendor testimonials or one major deployment as proof of autonomous legal work, demonstrated ROI or an immediate change in law-firm economics.</div>
 
 <h3>Pass 1 — significance</h3>
 <div class="score7">
@@ -89,35 +115,86 @@
 <div><small>Legal / professional services</small><b>5/5</b></div>
 <div><small>Actionability</small><b>4/5</b></div>
 </div>
-<p>Pass 1 assesses the development itself. Missing economic evidence reduces the Economic Impact score; it does not erase supported significance in other dimensions.</p>
+<p>Pass 1 assesses the development itself. Missing economic evidence reduces Economic Impact; it does not erase supported significance in other dimensions.</p>
 
 <h3>Pass 2 — client decision</h3>
-<p><b>No client context was supplied.</b> Radar therefore does not invent a client-specific recommendation. The default response is <b>MONITOR</b>. A specific EVALUATE / PREPARE / ACT decision requires actual organizational context.</p>
+<p><b>Client relevance: 5/5 · EVALUATE.</b> Run a bounded comparison against two or three representative research/drafting tasks. Measure quality, lawyer review burden, integration friction and duplicated tooling before considering broader deployment.</p>
+<p><b>Management question:</b> Which existing legal workflows are costly or fragmented enough that an integrated research-to-draft workflow would be worth evaluating now?</p>
 <p><b>Next research question:</b> What independent production evidence emerges on usage, lawyer intervention, quality, productivity and economics?</p>
 
 <h3>Evidence & sources</h3>
 <p><a class="record-link" href="https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-launches-next-generation-of-cocounsel-legal-the-ai-ecosystem-built-for-legal-professionals" target="_blank" rel="noopener">Thomson Reuters launch announcement →</a></p>
 <p><a class="record-link" href="https://www.thomsonreuters.com/en/press-releases/2026/august/greenberg-traurig-deploys-the-next-generation-of-cocounsel-legal" target="_blank" rel="noopener">Greenberg Traurig deployment announcement →</a></p>
 <p><small>Vendor documentation establishes what was announced and reported. It is not treated as independent proof of downstream business benefit.</small></p>
+<p><small><b>Change history:</b> 3 Nov 2026 — initial Stage 1 client-context assessment.</small></p>
 </div>
 </details>
 
-<details class="rung emerging">
-<summary><span>2</span><strong>Ropes &amp; Gray — billable credit for AI experimentation</strong><em>18/35 · MONITOR</em></summary>
+<details class="rung emerging radar-signal evaluate">
+<summary><span>2</span><strong>Claude for Legal — regulatory horizon-scan artifact</strong><em>19/35 · EVALUATE</em></summary>
+<div>
+<div class="signal-head">
+<div>
+<h3>Radar readout</h3>
+<p class="lead">Anthropic has productized a familiar advisory problem: mapping upcoming regulation against organizational context and ranking it by impact. This is a workflow/productization signal rather than a new foundation-model capability, but it is directly relevant to organizations trying to replace fragmented search and newsletter monitoring with contextualized intelligence.</p>
+</div>
+<div class="signal-score"><span>SIGNIFICANCE</span><strong>19/35</strong><span>Workflow signal</span></div>
+</div>
+
+<div class="four">
+<div><small>Response</small><b class="response-evaluate">EVALUATE</b></div>
+<div><small>Client relevance</small><b>4/5</b></div>
+<div><small>Evidence confidence</small><b>High</b></div>
+<div><small>Transferability</small><b>Unknown</b></div>
+</div>
+
+<h3>What changed</h3>
+<p>Anthropic added a legal-artifact gallery that includes a Regulatory horizon scan. Anthropic says the artifact maps upcoming regulations on a timeline using a company’s business and operating locations, ranks them by impact, and links findings to underlying sources.</p>
+
+<h3>Why it matters</h3>
+<p>The important signal is productization. A frontier-model provider is turning continuous regulatory overload into a repeatable legal workflow rather than leaving users with a blank chat box and a prompt. For the test client, which explicitly wants lower-burden horizon scanning, that is directly relevant.</p>
+
+<div class="call"><b>What the evidence does not establish</b><br>The announcement establishes the artifact and its intended workflow. It does not establish continuous autonomous monitoring, integration with a company’s live compliance evidence, improved compliance outcomes or reduced legal spend.</div>
+<div class="call good"><b>What you can ignore</b><br>Do not assume the phrase “horizon scan” means a persistent regulatory-intelligence service or a live compliance-management system.</div>
+
+<h3>Pass 1 — significance</h3>
+<div class="score7">
+<div><small>Capability change</small><b>2/5</b></div>
+<div><small>Enterprise relevance</small><b>3/5</b></div>
+<div><small>Adoption proximity</small><b>3/5</b></div>
+<div><small>Economic impact</small><b>0/5</b></div>
+<div><small>Governance / risk</small><b>4/5</b></div>
+<div><small>Legal / professional services</small><b>4/5</b></div>
+<div><small>Actionability</small><b>3/5</b></div>
+</div>
+
+<h3>Pass 2 — client decision</h3>
+<p><b>Client relevance: 4/5 · EVALUATE.</b> Test the artifact against one real horizon-scanning question and compare coverage, sourcing, update burden and usefulness against the firm’s current manual/newsletter process before building anything bespoke.</p>
+<p><b>Management question:</b> Which recurring regulatory or AI-policy watch currently consumes the most professional time without producing proportionate decision value?</p>
+<p><b>Next research question:</b> How well does the artifact retain organizational context, refresh sources over time and distinguish genuine applicability from merely relevant regulation?</p>
+
+<h3>Evidence & sources</h3>
+<p><a class="record-link" href="https://claude.com/resources/articles/introducing-artifacts-for-legal-work" target="_blank" rel="noopener">Anthropic — Introducing artifacts for legal work with Claude →</a></p>
+<p><small><b>Change history:</b> 3 Nov 2026 — initial Stage 1 assessment.</small></p>
+</div>
+</details>
+
+<details class="rung emerging radar-signal monitor">
+<summary><span>3</span><strong>Ropes &amp; Gray — billable credit for AI experimentation</strong><em>17/35 · MONITOR</em></summary>
 <div>
 <div class="signal-head">
 <div>
 <h3>Radar readout</h3>
 <p class="lead">There is no technology breakthrough here. The signal is organizational: a major firm is changing the incentives around AI learning and experimentation by allowing substantial billable-hour credit. That may matter more to real adoption than another product announcement, but it does not establish ROI or an industry-wide shift.</p>
 </div>
-<div class="signal-score"><span>SIGNIFICANCE</span><strong>18/35</strong><span>Adoption signal</span></div>
+<div class="signal-score"><span>SIGNIFICANCE</span><strong>17/35</strong><span>Adoption signal</span></div>
 </div>
 
 <div class="four">
-<div><small>Response</small><b>MONITOR</b></div>
-<div><small>Client relevance</small><b>Not assessed</b></div>
+<div><small>Response</small><b class="response-monitor">MONITOR</b></div>
+<div><small>Client relevance</small><b>4/5</b></div>
 <div><small>Evidence confidence</small><b>Medium–High</b></div>
-<div><small>Transferability</small><b>Unknown</b></div>
+<div><small>Transferability</small><b>Moderate</b></div>
 </div>
 
 <h3>What changed</h3>
@@ -134,20 +211,22 @@
 <div><small>Capability change</small><b>0/5</b></div>
 <div><small>Enterprise relevance</small><b>4/5</b></div>
 <div><small>Adoption proximity</small><b>4/5</b></div>
-<div><small>Economic impact</small><b>0/5</b></div>
+<div><small>Economic impact</small><b>1/5</b></div>
 <div><small>Governance / risk</small><b>1/5</b></div>
-<div><small>Legal / professional services</small><b>5/5</b></div>
-<div><small>Actionability</small><b>4/5</b></div>
+<div><small>Legal / professional services</small><b>4/5</b></div>
+<div><small>Actionability</small><b>3/5</b></div>
 </div>
-<p>The framework can score an organizational change as significant even when Capability Change is zero. The dimensions are independent.</p>
+<p>The framework can score an organizational development as significant even when Capability Change is zero. The dimensions are independent.</p>
 
 <h3>Pass 2 — client decision</h3>
-<p><b>No client context was supplied.</b> Radar does not infer that another firm should copy the policy. The default response is <b>MONITOR</b>.</p>
-<p><b>Next research question:</b> Do comparable firms change billable-credit systems, evaluation criteria or training structures — and do any publish evidence of resulting productivity or client-delivery effects?</p>
+<p><b>Client relevance: 4/5 · MONITOR.</b> Do not copy the hours policy yet. Track how peer firms structure AI learning credit and whether they link it to specific workflow experiments, quality measures or adoption outcomes.</p>
+<p><b>Management question:</b> Are current utilization and billing incentives quietly discouraging lawyers from learning and testing tools the firm says it wants them to use?</p>
+<p><b>Next research question:</b> Do comparable firms adopt similar credit structures, and do any publish evidence of resulting productivity or client-delivery effects?</p>
 
 <h3>Evidence & sources</h3>
 <p><a class="record-link" href="https://www.reuters.com/legal/legalindustry/law-firms-give-lawyers-time-off-billing-grind-test-drive-ai-2026-10-08/" target="_blank" rel="noopener">Reuters reporting, 8 Oct 2026 →</a></p>
 <p><small>The policy is evidence of investment and changed incentives. It is not treated as evidence that AI has already produced the business benefits firms hope to achieve.</small></p>
+<p><small><b>Change history:</b> 3 Nov 2026 — initial Stage 1 client-context assessment.</small></p>
 </div>
 </details>
 </section>
@@ -164,8 +243,9 @@
 <h3>Pass 1 — development assessment</h3>
 <p>Pass 1 evaluates the development without client context. Seven independent dimensions are scored from 0–5: Capability Change, Enterprise Relevance, Adoption Proximity, Economic Impact, Governance / Risk, Legal / Professional Services, and Actionability. Evidence Confidence and Transferability stay separate from Significance.</p>
 <h3>Pass 2 — client decision</h3>
-<p>Pass 2 adds actual client context to the development assessment. It asks whether the development is applicable, how relevant it is, and what response is justified. Without client context, Radar does not invent one.</p>
+<p>Pass 2 adds the fixed Stage 1 client context to the development assessment. It asks whether the development is applicable, how relevant it is, and what response is justified. Client context may change the decision; it does not rewrite the development evidence.</p>
 <blockquote>Significance = is this worth attention? Evidence = how sure are we? Relevance = does it matter to you? Response = what should you do?</blockquote>
+<p><b>Stage 1 is analyst-reviewed.</b> It is intentionally not a self-service AI application. The objective is to test whether the intelligence product is useful before automating research, ingestion, client profiles or delivery.</p>
 </section>
 
 <section class="panel" id="test">
@@ -183,6 +263,16 @@
 </section>
 </main>
 
-<footer>AI Decision Radar · Evidence first. Judgment explicit. Conclusions provisional.</footer>
+<footer>AI Decision Radar · Evidence first. Client context second. Judgment remains human.</footer>
+
+<script>
+const buttons=[...document.querySelectorAll('.filter-row button')];
+const signals=[...document.querySelectorAll('.radar-signal')];
+buttons.forEach(button=>button.addEventListener('click',()=>{
+  const filter=button.dataset.filter;
+  signals.forEach(s=>s.hidden=filter!=='all'&&!s.classList.contains(filter));
+  buttons.forEach(b=>b.classList.toggle('active',b===button));
+}));
+</script>
 </body>
 </html>
