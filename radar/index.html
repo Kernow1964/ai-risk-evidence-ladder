@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AI Decision Radar — Stage 1 human-reviewed prototype.">
+<title>AI Decision Radar — Stage 1</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+.radar-note{background:#fffaf0;border-top:6px solid #b8862d;padding:28px 34px;margin:0 0 42px;box-shadow:0 2px 8px #082b350d}
+.signal-head{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start}
+.signal-score{background:#082b35;color:#fffaf0;padding:14px 18px;min-width:150px;text-align:right;border-bottom:4px solid #b8862d}
+.signal-score strong{display:block;font:2.5rem Georgia;line-height:1}.signal-score span{font-size:.78rem;color:#d6b15c}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+.four div,.score7 div{background:#f0ebdf;padding:12px}
+.four small,.score7 small{display:block;color:#657176}.score7{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
+.call{padding:16px 18px;border-left:4px solid #b8862d;background:#f5ead0;margin:16px 0}.good{border-left-color:#236343;background:#e8efe7}
+.method4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.method4 div{background:#f0ebdf;padding:16px}.method4 b{display:block;font:1.8rem Georgia;color:#b8862d}.method4 strong{display:block;color:#082b35}
+@media(max-width:700px){.signal-head,.four,.score7,.method4{grid-template-columns:1fr 1fr}.signal-score{text-align:left}}
+@media(max-width:460px){.signal-head,.four,.score7,.method4{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<nav><b>AI Decision Radar</b><a href="#assessments">Assessments</a><a href="#method">Method</a><a href="#test">Test</a></nav>
+<section class="hero">
+<small>STAGE 1 · HUMAN-REVIEWED PROTOTYPE · NOVEMBER 2026</small>
+<h1>What changed? Does it matter? What should we do?</h1>
+<p>AI Decision Radar turns noisy AI developments into short, evidence-disciplined assessments — separating what happened from what is claimed, and significance from client-specific action.</p>
+<blockquote>Less AI news. More decision intelligence.</blockquote>
+<p class="legend"><i>Evidence first</i><i>Two-pass analysis</i><i>Human reviewed</i></p>
+</section>
+</header>
+
+<main>
+<section class="radar-note">
+<small>WHAT THIS VERSION IS FOR</small>
+<h2>Test the analysis before we automate the experience.</h2>
+<p>This first version is deliberately small. It shows reviewed Radar assessments to a limited test audience and asks one question: <b>is this kind of analysis useful enough that you would want more of it?</b></p>
+<p><b>Stage 1:</b> no autonomous publishing, no invented client context, and no self-service AI analysis yet.</p>
+</section>
+
+<section class="dashboard">
+<div class="metric emerging"><strong>2</strong><span>Worked assessments</span></div>
+<div class="metric established"><strong>2</strong><span>Analytical passes</span></div>
+<div class="metric speculative"><strong>7</strong><span>Significance dimensions</span></div>
+<div class="metric updated"><span>Last reviewed</span><strong>3 Nov 2026</strong></div>
+</section>
+
+<section id="assessments">
+<h2>Worked assessments</h2>
+<p>Two different signals: one product/capability development and one organizational adoption development.</p>
+
+<details class="rung emerging" open>
+<summary><span>1</span><strong>Thomson Reuters — next-generation CoCounsel Legal</strong><em>22/35 · MONITOR</em></summary>
+<div>
+<div class="signal-head">
+<div>
+<h3>Radar readout</h3>
+<p class="lead">A meaningful shift toward integrated, multi-step legal AI workflows is generally available in the U.S., with at least one reported major-firm deployment. It is worth attention, but the evidence does not yet establish productivity, economic impact or broad adoption of the new capabilities.</p>
+</div>
+<div class="signal-score"><span>SIGNIFICANCE</span><strong>22/35</strong><span>Worth attention</span></div>
+</div>
+
+<div class="four">
+<div><small>Response</small><b>MONITOR</b></div>
+<div><small>Client relevance</small><b>Not assessed</b></div>
+<div><small>Evidence confidence</small><b>Medium–High</b></div>
+<div><small>Transferability</small><b>Uncertain</b></div>
+</div>
+
+<h3>What changed</h3>
+<p>Thomson Reuters announced U.S. general availability of the next generation of CoCounsel Legal on August 20, 2026. The company describes a system that can plan, research and draft across multi-step legal workflows, including Westlaw Brief Builder, Workspaces, drafting in Microsoft Word, Tabular Analysis and Deep Research Verify.</p>
+<p>On August 26, Thomson Reuters announced that Greenberg Traurig had deployed the new CoCounsel Legal across its global offices following beta participation and product collaboration.</p>
+
+<h3>Why it matters</h3>
+<p>The signal is not simply “better AI.” It is the continued movement from isolated prompting toward integrated legal workflows combining research, drafting, verification, matter context and firm knowledge. That may eventually affect how legal organizations structure work and evaluate their technology stack.</p>
+
+<div class="call"><b>What the evidence does not establish</b><br>No controlled evidence here establishes improved lawyer productivity, lower matter cost, staffing changes, better legal outcomes or broad adoption of the newly released agentic capabilities.</div>
+<div class="call good"><b>What you can ignore</b><br>Do not treat this launch as proof of autonomous legal work, demonstrated ROI or an immediate change in law-firm economics.</div>
+
+<h3>Pass 1 — significance</h3>
+<div class="score7">
+<div><small>Capability change</small><b>4/5</b></div>
+<div><small>Enterprise relevance</small><b>4/5</b></div>
+<div><small>Adoption proximity</small><b>4/5</b></div>
+<div><small>Economic impact</small><b>0/5</b></div>
+<div><small>Governance / risk</small><b>1/5</b></div>
+<div><small>Legal / professional services</small><b>5/5</b></div>
+<div><small>Actionability</small><b>4/5</b></div>
+</div>
+<p>Pass 1 assesses the development itself. Missing economic evidence reduces the Economic Impact score; it does not erase supported significance in other dimensions.</p>
+
+<h3>Pass 2 — client decision</h3>
+<p><b>No client context was supplied.</b> Radar therefore does not invent a client-specific recommendation. The default response is <b>MONITOR</b>. A specific EVALUATE / PREPARE / ACT decision requires actual organizational context.</p>
+<p><b>Next research question:</b> What independent production evidence emerges on usage, lawyer intervention, quality, productivity and economics?</p>
+
+<h3>Evidence & sources</h3>
+<p><a class="record-link" href="https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-launches-next-generation-of-cocounsel-legal-the-ai-ecosystem-built-for-legal-professionals" target="_blank" rel="noopener">Thomson Reuters launch announcement →</a></p>
+<p><a class="record-link" href="https://www.thomsonreuters.com/en/press-releases/2026/august/greenberg-traurig-deploys-the-next-generation-of-cocounsel-legal" target="_blank" rel="noopener">Greenberg Traurig deployment announcement →</a></p>
+<p><small>Vendor documentation establishes what was announced and reported. It is not treated as independent proof of downstream business benefit.</small></p>
+</div>
+</details>
+
+<details class="rung emerging">
+<summary><span>2</span><strong>Ropes &amp; Gray — billable credit for AI experimentation</strong><em>18/35 · MONITOR</em></summary>
+<div>
+<div class="signal-head">
+<div>
+<h3>Radar readout</h3>
+<p class="lead">There is no technology breakthrough here. The signal is organizational: a major firm is changing the incentives around AI learning and experimentation by allowing substantial billable-hour credit. That may matter more to real adoption than another product announcement, but it does not establish ROI or an industry-wide shift.</p>
+</div>
+<div class="signal-score"><span>SIGNIFICANCE</span><strong>18/35</strong><span>Adoption signal</span></div>
+</div>
+
+<div class="four">
+<div><small>Response</small><b>MONITOR</b></div>
+<div><small>Client relevance</small><b>Not assessed</b></div>
+<div><small>Evidence confidence</small><b>Medium–High</b></div>
+<div><small>Transferability</small><b>Unknown</b></div>
+</div>
+
+<h3>What changed</h3>
+<p>Reuters reported on October 8, 2026 that Ropes &amp; Gray would allow more than 1,000 associates and counsel to count up to 100 hours of AI experimentation and training toward annual billing requirements. The report said the firm had devoted more than 35,000 associate hours to AI work during 2026.</p>
+
+<h3>Why it matters</h3>
+<p>Billable-hour expectations create a practical disincentive to spend time learning tools whose value is not yet certain. Crediting AI experimentation changes that incentive structure and treats AI fluency as professional development rather than extracurricular innovation work. This is an adoption signal, not a capability signal.</p>
+
+<div class="call"><b>What the evidence does not establish</b><br>The reported investment of lawyer time does not establish higher profitability, better legal work, lower staffing requirements, improved productivity or client benefit.</div>
+<div class="call good"><b>What you can ignore</b><br>Do not translate “35,000 hours invested” into demonstrated ROI. It is evidence of commitment and experimentation, not evidence of economic return.</div>
+
+<h3>Pass 1 — significance</h3>
+<div class="score7">
+<div><small>Capability change</small><b>0/5</b></div>
+<div><small>Enterprise relevance</small><b>4/5</b></div>
+<div><small>Adoption proximity</small><b>4/5</b></div>
+<div><small>Economic impact</small><b>0/5</b></div>
+<div><small>Governance / risk</small><b>1/5</b></div>
+<div><small>Legal / professional services</small><b>5/5</b></div>
+<div><small>Actionability</small><b>4/5</b></div>
+</div>
+<p>The framework can score an organizational change as significant even when Capability Change is zero. The dimensions are independent.</p>
+
+<h3>Pass 2 — client decision</h3>
+<p><b>No client context was supplied.</b> Radar does not infer that another firm should copy the policy. The default response is <b>MONITOR</b>.</p>
+<p><b>Next research question:</b> Do comparable firms change billable-credit systems, evaluation criteria or training structures — and do any publish evidence of resulting productivity or client-delivery effects?</p>
+
+<h3>Evidence & sources</h3>
+<p><a class="record-link" href="https://www.reuters.com/legal/legalindustry/law-firms-give-lawyers-time-off-billing-grind-test-drive-ai-2026-10-08/" target="_blank" rel="noopener">Reuters reporting, 8 Oct 2026 →</a></p>
+<p><small>The policy is evidence of investment and changed incentives. It is not treated as evidence that AI has already produced the business benefits firms hope to achieve.</small></p>
+</div>
+</details>
+</section>
+
+<section class="panel" id="method">
+<small>THE METHOD</small>
+<h2>Two passes. Four questions kept separate.</h2>
+<div class="method4">
+<div><b>1</b><strong>Significance</strong><span>Is the development worth attention in its own right?</span></div>
+<div><b>2</b><strong>Evidence</strong><span>How strongly do we know what we think we know?</span></div>
+<div><b>3</b><strong>Client relevance</strong><span>Does it matter to this particular organization?</span></div>
+<div><b>4</b><strong>Response</strong><span>IGNORE · MONITOR · EVALUATE · PREPARE · ACT</span></div>
+</div>
+<h3>Pass 1 — development assessment</h3>
+<p>Pass 1 evaluates the development without client context. Seven independent dimensions are scored from 0–5: Capability Change, Enterprise Relevance, Adoption Proximity, Economic Impact, Governance / Risk, Legal / Professional Services, and Actionability. Evidence Confidence and Transferability stay separate from Significance.</p>
+<h3>Pass 2 — client decision</h3>
+<p>Pass 2 adds actual client context to the development assessment. It asks whether the development is applicable, how relevant it is, and what response is justified. Without client context, Radar does not invent one.</p>
+<blockquote>Significance = is this worth attention? Evidence = how sure are we? Relevance = does it matter to you? Response = what should you do?</blockquote>
+</section>
+
+<section class="panel" id="test">
+<small>SMALL TEST AUDIENCE</small>
+<h2>Help us test the analysis, not the technology.</h2>
+<p>Imagine one of these assessments landed in your inbox this week. We are testing whether the judgment is useful before deciding how much of the workflow should be automated.</p>
+<ol>
+<li><b>Would this save you time or improve your understanding?</b></li>
+<li><b>What would you remove, shorten or make clearer?</b></li>
+<li><b>Would you want a small number of these regularly?</b></li>
+<li><b>If an AI development crossed your desk, would you want to submit it for this treatment?</b></li>
+<li><b>What would make you trust — or distrust — the assessment?</b></li>
+</ol>
+<p><b>Stage 1 assessments are human-reviewed.</b> The objective is decision support, not autonomous advice.</p>
+</section>
+</main>
+
+<footer>AI Decision Radar · Evidence first. Judgment explicit. Conclusions provisional.</footer>
+</body>
+</html>
